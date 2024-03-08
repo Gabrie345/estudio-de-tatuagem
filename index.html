@@ -83,7 +83,24 @@
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
-            <div id="rodape" include-html="utils/contato.html"></div>
+            <h2>Entre em contato conosco:</h2>
+            <form action="">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" name="nome">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" class="form-control" id="telefone" placeholder="Digite seu telefone" name="telefone">
+                <div class="form-group">
+                    <label for="mensagem">O que você gostaria de tatuar ?:</label>
+                    <textarea class="form-control" id="mensagem" placeholder="Digite sua mensagem" name="mensagem"></textarea>
+                </div>
+            </form>
         </div>
     </div> 
 </html>
@@ -94,14 +111,14 @@
     var btn = document.getElementById("myBtn");
     var span = document.getElementsByClassName("close")[0];
     btn.onclick = function() {
-    modal.style.display = "block";
+        modal.style.display = "block";
     }
     span.onclick = function() {
-    modal.style.display = "none";
-    }
-    window.onclick = function(event) {
-    if (event.target == modal) {
         modal.style.display = "none";
     }
-}
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 </script>
