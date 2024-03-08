@@ -231,10 +231,96 @@ nav ul li:nth-last-child(1){
     font-size: 28px;
     font-weight: bold;
     }
-    
+
     .close:hover,
     .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
     }
+    /* Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(43, 43, 43, 0.8); /* Semi-transparent black background */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: var(--fundoTela); /* Background color */
+    margin: 10% auto; /* 10% from the top and centered horizontally */
+    padding: 20px;
+    border: 1px solid #fff; /* White border */
+    width: 80%; /* 80% width of the viewport */
+    max-width: 600px; /* Maximum width */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Shadow */
+    position: relative;
+}
+
+/* Close Button */
+.close {
+    color: var(--corTexto); /* Text color */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #ccc; /* Lighter text color on hover */
+}
+
+/* Form Styling */
+.modal-content form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    color: var(--corTexto); /* Text color */
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Light gray border */
+    background-color: #fff; /* White background */
+    color: #333; /* Text color */
+}
+
+/* Submit Button */
+.modal-content .btn-submit {
+    background-color: var(--corBotao); /* Button background color */
+    color: var(--corTexto); /* Text color */
+    border: 1px solid var(--corBotao); /* Button border */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content .btn-submit:hover {
+    background-color: #333; /* Darker background color on hover */
+    border-color: #333; /* Darker border color on hover */
+}
+.modal-content .btn-submit {
+    background-color: #fff; /* Cor de fundo mais clara */
+    color: #000; /* Cor do texto preto */
+    border: 1px solid #000; /* Borda preta */
+    padding: 10px 20px;
+    border-radius: 20px; /* Bordas arredondadas */
+    cursor: pointer;
+    display: block; /* Para centralizar o botão */
+    margin: 0 auto; /* Para centralizar o botão */
+}
