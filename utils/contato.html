@@ -1,4 +1,52 @@
-<form action="">
+<style>
+    /* Form Styling */
+    .modal-content form {
+        margin-top: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    label {
+        color: var(--corTexto); /* Text color */
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc; /* Light gray border */
+        background-color: #fff; /* White background */
+        color: #333; /* Text color */
+    }
+
+    /* Submit Button */
+    .modal-content .btn-submit {
+        background-color: var(--corBotao); /* Button background color */
+        color: var(--corTexto); /* Text color */
+        border: 1px solid var(--corBotao); /* Button border */
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .modal-content .btn-submit:hover {
+        background-color: #333; /* Darker background color on hover */
+        border-color: #333; /* Darker border color on hover */
+    }
+    .modal-content .btn-submit {
+        background-color: #fff; /* Cor de fundo mais clara */
+        color: #000; /* Cor do texto preto */
+        border: 1px solid #000; /* Borda preta */
+        padding: 10px 20px;
+        border-radius: 20px; /* Bordas arredondadas */
+        cursor: pointer;
+        display: block; /* Para centralizar o botão */
+        margin: 0 auto; /* Para centralizar o botão */
+    }
+</style>
+<form action="" method="" onsubmit="return validarFormulario()">
     <div class="form-group">
         <label for="nome">Nome:</label>
         <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" name="nome">
@@ -8,7 +56,11 @@
         <input type="email" class="form-control" id="email" placeholder="Digite seu email" name="email">
     </div>
     <div class="form-group">
-        <label for="mensagem">Mensagem:</label>
+        <label for="telefone">Telefone:</label>
+        <input type="text" class="form-control" id="telefone" placeholder="Digite seu telefone" name="telefone">
+    <div class="form-group">
+        <label for="mensagem">O que você gostaria de tatuar ?:</label>
         <textarea class="form-control" id="mensagem" placeholder="Digite sua mensagem" name="mensagem"></textarea>
     </div>
+    <button type="button" onclick="enviarMensagem()" id ="botaoEnviar" class="btn btn-submit">Enviar</button>
 </form>
