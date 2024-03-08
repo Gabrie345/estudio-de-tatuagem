@@ -1,0 +1,241 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    border: none;
+}
+:root{
+    --fundoTela: #2B2B2B;
+    --margemCabeçalho: rgba(255, 255, 255, 0.08) solid 1px;
+    --menumhamburger: #fff;
+    --footerCor: #1467e2;
+    --fonteCorFooterCor: #fff;
+    --corTexto: #fff;
+    --corBotao: #000;
+    --corBotaoDesigns: #fff; 
+    --corTextoDesigns: #000;       
+}
+.degrade {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#162336+0,162336+100&0+0,1+90 */
+    background: -moz-linear-gradient(top, rgba(244, 6, 6, 0) 0%, rgba(43, 43, 43, 1) 90%, rgba(43, 43, 43, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(43, 43, 43, 0) 0%, rgba(43, 43, 43, 1) 90%, rgba(43, 43, 43, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(43, 43, 43, 0) 0%, rgba(43, 43, 43, 1) 90%, rgba(43, 43, 43, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00162B2B2B', endColorstr='#2B2B2B', GradientType=0); /* IE6-9 */
+    display: block;
+    height: 30%;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+body{
+    background: var(--fundoTela);
+    color: #8d96a7;
+    font-family: 'Roboto Condensed', 'Calibri', 'Arial', 'sans-serif';
+    font-size: 0.96rem;
+    font-weight: 300;
+}
+html, body{
+    height: 100%;
+}
+.bg{
+    background-size: cover;
+    height: 100%;
+}
+nav{
+    flex-basis: 100%;
+    height: 0;
+    overflow: hidden;
+    a{
+        color: var(--menumhamburger);
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        font-size: 0.98rem;
+        padding: 8px;
+    }
+    nav ul li{
+        border-bottom: var(--menumhamburger) solid 1px;
+    }
+    nav ul{
+        margin: 0 15px;
+        list-style: none;
+    }
+}
+nav ul li{
+    border-bottom: rgba(250, 250, 250, 0.08) solid 1px;
+}
+nav ul li:nth-last-child(1){
+    border-bottom: none;
+}
+#checkbox-menu:checked ~ nav{
+    height: auto;
+}
+.headline{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: 0 0px;
+    flex-direction: column;
+    
+    #myVideo{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: none;
+    }
+    .principalTexto{
+        margin: 0 15px;
+        h1{
+            font-family:'Roboto Condensed';
+            color: var(--corTexto);
+            font-size: 4rem;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+            line-height: 3.0rem;
+        }
+        .btn{
+            font-family: 'Koulen', 'Roboto Condensed';
+            border: none;
+            cursor: pointer;
+            border-radius: 50px;
+            margin-top: 10px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            background:var(--corBotao);
+            border: var(--corBotao) solid 2px;
+            color: var(--corTexto);
+            padding: 5px 24px;
+            font-size: 1.2rem;
+        }
+        .texto_Tattoo{
+            color: var(--corTexto);
+            font-size: 1.0rem;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+            p{
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+.estilos{
+    text-align: center;
+    padding: 20px;
+    h2{
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    p{
+        margin-bottom: 20px;
+    }
+    .btn{
+        font-family: 'Koulen', 'Roboto Condensed';
+        border: none;
+        cursor: pointer;
+        border-radius: 50px;
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 1.2rem;
+        background:var(--corBotaoDesigns);;
+        border: var(--corBotaoDesigns) solid 2px;
+        color: var(--corTextoDesigns);
+        padding: 5px 24px;
+        font-size: 1.2rem;
+        
+    }
+    .estilos_Imagem{
+        margin-top: 20px;
+        white-space: nowrap;
+        width: cal(100% + 15px);
+        display: block;
+        overflow-y: auto;
+        ul{
+            list-style: none;
+            margin-bottom: 10px;
+            font-size: 0;
+            margin-bottom: 10px;
+            font-size: 0;
+            li{
+                display: inline-block;
+                width: 75%;
+                padding: 5px;
+                img{
+                    width: 100%;
+                    height: auto;      
+                }
+            }
+        }
+    }
+}
+.SobreNos{
+    background-color: #d1d1d1;
+    text-align: center;
+    padding: 20px;
+    h2{
+        color: #2B2B2B;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    p{
+        margin-bottom: 20px;
+        color: #2B2B2B;
+    }
+    .imagem_tatoo {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+    }
+}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    }
+
+    /* The Close Button */
+    .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    }
