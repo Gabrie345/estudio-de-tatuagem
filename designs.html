@@ -1,4 +1,27 @@
 <!DOCTYPE html>
+<style>
+    .headline{
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        margin: 0 0px;
+        flex-direction: column;
+        .principalTexto{
+            display: flex;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+        } 
+    }
+
+
+</style>
 <html lang="br">
     <head>
         <meta charset="UTF-8">
@@ -15,8 +38,16 @@
     <body>
         <div class="bg">
             <div id="header" include-html="utils/header.html"></div>
+            <div class="headline">
+                <div class="principalTexto">
+                    <h1>colocar todos tipo uma biblioteca de designs</h1>
+                </div>
+            </div>
         </div>
+        
         <div id="rodape" include-html="utils/footer.html"></div>
     </body> 
 </html>
 <script src="js/includeHTML.js"></script>
+
+
