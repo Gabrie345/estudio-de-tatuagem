@@ -67,6 +67,20 @@ html, body{
             text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
             line-height: 3.0rem;
         }
+        #myBtnWpp{
+            font-family: 'Koulen', 'Roboto Condensed';
+            border: none;
+            cursor: pointer;
+            border-radius: 50px;
+            margin-top: 10px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            background:#25D366;
+            border: #25D366;
+            color: var(--corTexto);
+            padding: 5px 24px;
+            font-size: 1.2rem;
+        } 
         #myBtn{
             font-family: 'Koulen', 'Roboto Condensed';
             border: none;
