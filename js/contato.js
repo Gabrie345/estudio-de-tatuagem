@@ -1,3 +1,10 @@
+var existeErro = false;
+function postEmail(){
+    validateForm();
+    if (existeErro == true) return;
+    alert("implementar envio de email");
+}
+
 function validateForm() {
     const elements = document.querySelectorAll('.form-control');
     elements.forEach(element => {
@@ -6,7 +13,6 @@ function validateForm() {
         switchcase(id, value);
     });
     document.getElementById('textoErro').style.display = 'block';
-    return true;
 }
 
 function validarFocousOut(id, value) {
@@ -18,29 +24,41 @@ function switchcase(id, value) {
         case 'nome':
             if (!isValidName(value)) {
                 errosMostar(id, "red")
+                existeErro = true;
                 return false;
             }else {
+                existeErro = false;
                 errosMostar(id, "black")
             }
             break;
         case 'telefone':    
             if (!isValidPhone(value)) {
                 errosMostar(id, "red")
+                existeErro = true;
                 return false;
             }else {
+                existeErro = false;
                 errosMostar(id, "black")
             }
             break;
         case 'email':
             if (!isValidEmail(value)) {
                 errosMostar(id, "red")
+                existeErro = true;
                 return false;
             }else {
+                existeErro = false;
                 errosMostar(id, "black")
             }
             break;
         default:
             break;
+    }
+    if (existeErro == false) {
+        document.getElementById('textoErro').style.display = 'none';
+    }else{
+        document.getElementById('textoErro').style.display = 'block';
+    
     }
 }
 function errosMostar(campo, cor){
@@ -56,6 +74,7 @@ function isValidEmail(email) {
     return pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
 }
+
 
 
 

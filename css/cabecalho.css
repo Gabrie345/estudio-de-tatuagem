@@ -43,7 +43,7 @@ header{
     flex-wrap: wrap;
     position: absolute;
     width: calc(100% - 14px);
-    z-index: 2;
+    z-index: 1;
     .logomarca{
         width: 60px;
         height: 60px;
@@ -90,8 +90,8 @@ nav ul li{
     border-bottom: rgba(250, 250, 250, 0.08) solid 1px;
 }
 nav ul li:nth-last-child(1){
-    border-bottom: none;
+     border-bottom: none;
 }
-#checkbox-menu:checked ~ nav{
+#checkbox-menu:checked ~ #menu{
     height: auto;
 }

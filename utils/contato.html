@@ -20,6 +20,7 @@
         border: 1px solid #ccc; /* Light gray border */
         background-color: #fff; /* White background */
         color: #333; /* Text color */
+        background: black;
     }
 
     /* Submit Button */
@@ -53,6 +54,7 @@
         display: none;
 
     }
+
 </style>
 <form action="" method="">
     <div class="form-group">
@@ -70,6 +72,6 @@
         <label for="mensagem">O que você gostaria de tatuar ?:</label>
         <textarea class="form-control" id="mensagem" placeholder="Digite sua mensagem" name="mensagem"></textarea>
     </div>
-    <button type="button"  id ="botaoEnviar" onclick="validateForm()" class="btn btn-submit">Enviar</button>
+    <button type="button"  id ="botaoEnviar" onclick="postEmail()" class="btn btn-submit">Enviar</button>
 </form>
 <p id="textoErro">Preencha todos os campos</p>
