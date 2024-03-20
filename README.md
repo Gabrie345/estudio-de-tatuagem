@@ -1,6 +1,4 @@
-# estudio de tatuagem
- 
-# Landing Page Acessível e Mobile-First
+ # Estudio de tatuagem Landing Page Acessível e Mobile-First
 
 ## Este é um projeto de uma landing page desenvolvida com HTML, CSS e JavaScript, com foco na acessibilidade e otimização para dispositivos móveis (mobile-first).
 
